@@ -1,0 +1,59 @@
+{
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": true
+    },
+    	// Enable/disable automatic closing of JSX tags.
+	"javascript.autoClosingTags": true,
+
+	// Enable/disable default JavaScript formatter.
+	"javascript.format.enable": true,
+
+	// Defines space handling after a comma delimiter.
+	"javascript.format.insertSpaceAfterCommaDelimiter": true,
+
+	// Defines space handling after the constructor keyword.
+	"javascript.format.insertSpaceAfterConstructor": false,
+
+	// Defines space handling after function keyword for anonymous functions.
+	"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+
+	// Defines space handling after keywords in a control flow statement.
+	"javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+
+	// Defines space handling after opening and before closing JSX expression braces.
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+
+	// Defines space handling after opening and before closing non-empty braces.
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+
+	// Defines space handling after opening and before closing non-empty brackets.
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+
+	// Defines space handling after opening and before closing non-empty parenthesis.
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+
+	// Defines space handling after opening and before closing template string braces.
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+
+	// Defines space handling after a semicolon in a for statement.
+	"javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+
+	// Defines space handling after a binary operator.
+	"javascript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+
+	// Defines space handling before function argument parentheses.
+	"javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+
+	// Defines whether an open brace is put onto a new line for control blocks or not.
+	"javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+
+	// Defines whether an open brace is put onto a new line for functions or not.
+	"javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+
+	// Defines handling of optional semicolons. Requires using TypeScript 3.7 or newer in the workspace.
+	//  - ignore: Don't insert or remove any semicolons.
+	//  - insert: Insert semicolons at statement ends.
+	//  - remove: Remove unnecessary semicolons.
+	"javascript.format.semicolons": "ignore",
+}

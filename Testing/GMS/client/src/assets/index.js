@@ -1,0 +1,28 @@
+const Images = {
+    'AppleIcon': require("./images/apple-icon.png"),
+    'Au': require("./images/AU.png"),
+    'BalMain': require("./images/balmain.jpg"),
+    'Background1': require("./images/bg1.jpg"),
+    'Background3': require("./images/bg3.jpg"),
+    'Background5': require("./images/bg5.jpg"),
+    'Background13': require("./images/bg13.jpg"),
+    'Background14': require("./images/bg14.jpg"),
+    'Background15': require("./images/bg15.jpg"),
+    'Background16': require("./images/bg16.jpg"),
+    'Br': require("./images/BR.png"),
+    'De': require("./images/DE.png"),
+    'DefaultAvatar': require("./images/default-avatar.png"),
+    'Emilyz': require("./images/emilyz.jpg"),
+    'FavIcon': require("./images/favicon.png"),
+    'Gb': require("./images/GB.png"),
+    'ImagePlaceHolder': require("./images/image_placeholder.jpg"),
+    'James': require("./images/james.jpg"),
+    'Mike': require("./images/mike.jpg"),
+    'NowLogo': require("./images/now-logo.png"),
+    'PlaceHolder': require("./images/placeholder.jpg"),
+    'Prada': require("./images/prada.jpg"),
+    'Ro': require("./images/RO.png"),
+    'SaintLaurent': require("./images/saint-laurent.jpg"),
+    'Us': require("./images/US.png")
+}
+export default Images;
