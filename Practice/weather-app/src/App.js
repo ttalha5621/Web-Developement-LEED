@@ -1,11 +1,12 @@
 // import logo from './logo.svg';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
   let [city, setCity] = useState("");
   let [wDetails, setWDetails] = useState();
   let [isLoading,setIsLoading] = useState(false);
+  let [counter,setCounter]=useState(1)
 
   let getData = (event) => {
     setIsLoading(true)
@@ -26,8 +27,18 @@ function App() {
     setCity("");
   };
 
+  useEffect(()=>{
+    console.log("Hello")
+  },[counter])
+
+  let chnageCounter=()=>{
+    setCounter(counter+1)
+  }
+
   return (
     <div className="w-[100%] h-[100vh] bg-[#4aacb1]">
+      {counter}
+      <button onClick={chnageCounter}>Counter</button>
       <div className="max-w[1320px] mx-auto">
         <h1 className="text-[40px] font-bold py-[50px] text-white">
           Simple Weather App
