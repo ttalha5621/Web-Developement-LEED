@@ -10,27 +10,29 @@ function App() {
   let [number, setNumber] = useState(false);
   let [symbol, setSymbol] = useState(false);
   let [passowrdLen, setPasswordLen] = useState(10);
-  let [fPass,setPass] = useState('')
+  let [fPass, setPass] = useState("");
 
   let createPassowrd = () => {
-    let finalPass='';
-    let charSet = '';
+    let finalPass = "";
+    let charSet = "";
     if (upperCase || lowerCase || number || symbol) {
       if (upperCase) charSet += UC;
       if (lowerCase) charSet += LC;
       if (number) charSet += NC;
       if (symbol) charSet += SC;
 
-      for(let i=0;i<passowrdLen;i++){
+      for (let i = 0; i < passowrdLen; i++) {
         finalPass += charSet.charAt(Math.floor(Math.random() * charSet.length));
       }
-      console.log(finalPass)
-
-      console.log(charSet, charSet.length);
+      setPass(finalPass);
     } else {
       alert("Please Select One Checkbox...");
     }
   };
+
+  let copyPass=()=>{
+    navigator.clipboard.writeText(fPass)
+  }
 
   return (
     <>
@@ -38,7 +40,7 @@ function App() {
         <h2>Password Generator</h2>
         <div className="passwordBoxIn">
           <input type="text" value={fPass} readOnly />
-          <button>
+          <button onClick={copyPass}>
             <FontAwesomeIcon icon={faCopy} />
           </button>
         </div>
